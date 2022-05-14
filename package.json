@@ -1,0 +1,29 @@
+{
+  "name": "@fabric/zmq",
+  "version": "0.1.0",
+  "description": "ZeroMQ service definition for Fabric",
+  "main": "services/zmq",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FabricLabs/fabric-zmq.git"
+  },
+  "keywords": [
+    "fabric",
+    "zmq"
+  ],
+  "author": "Fabric Labs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FabricLabs/fabric-zmq/issues"
+  },
+  "homepage": "https://github.com/FabricLabs/fabric-zmq#readme",
+  "dependencies": {
+    "@fabric/core": "github:FabricLabs/fabric#security/dependencies"
+  }
+}
