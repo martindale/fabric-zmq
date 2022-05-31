@@ -33,7 +33,7 @@ class ZMQ extends Service {
       ]
     }, settings);
 
-    this.socket = zeromq.socket('sub');
+    this.socket = null;
     this._state = { status: 'STOPPED' };
 
     return this;
@@ -46,6 +46,7 @@ class ZMQ extends Service {
   async start () {
     const self = this;
 
+    this.socket = zeromq.socket('sub');
     this.socket.connect(`tcp://${this.settings.host}:${this.settings.port}`);
     this.socket.on('message', function _handleSocketMessage (topic, message) {
       const path = `channels/${topic.toString()}`;
