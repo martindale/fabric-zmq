@@ -24,7 +24,9 @@
   },
   "homepage": "https://github.com/FabricLabs/fabric-zmq#readme",
   "dependencies": {
-    "@fabric/core": "git+https://git@github.com/FabricLabs/fabric#feature/node-16",
     "zeromq": "^5.2.8"
+  },
+  "peerDependencies": {
+    "@fabric/core": "FabricLabs/fabric#feature/node-16"
   }
 }
